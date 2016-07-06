@@ -14,7 +14,6 @@ namespace App8
         {
             Person = new Person() { Name = "Jack", Salary = 23400.09M };
             Thickness = 6F;
-            Locale = "EN";
         }
 
         private Person _person;
@@ -43,21 +42,6 @@ namespace App8
             set
             {
                 _thickness = value;
-                OnPropertyChanged();
-            }
-        }
-
-        private string _locale;
-
-        public string Locale
-        {
-            get
-            {
-                return _locale;
-            }
-            set
-            {
-                _locale = value;
                 OnPropertyChanged();
             }
         }
